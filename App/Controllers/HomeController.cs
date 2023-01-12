@@ -61,7 +61,6 @@ namespace AB_test_app.Controllers
                 {
                     new
                     {
-                        // Replace this with a unique identifier for the user
                         user_id = userObject.Identifier,
                         event_type = isFlagOn ? "Variant Cart Button" : "Original Cart Button",
                     }
