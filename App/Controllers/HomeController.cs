@@ -71,4 +71,4 @@ namespace AB_test_app.Controllers {
       Console.WriteLine("Event logged successfully");
     }
   }
-}
+} 
