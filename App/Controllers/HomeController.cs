@@ -56,7 +56,7 @@ namespace AB_test_app.Controllers
             // HTTP POST request body:
             var data = new
             {
-                api_key = "deddaa2d8d60d0417b33e9a3d99fa0e3",
+                api_key = "YOUR-AMPLITUDE-KEY",
                 events = new[]
                 {
                     new
