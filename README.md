@@ -4,7 +4,7 @@ A sample application showcasing how A/B testing with ConfigCat's Feature Flags a
 
 Read.me template:
 
-# Sample application name and/or blogpost title
+# Sample application name and/or blogpost title 
 
 #### (Optional) In case the blog post is already published, please add: [Read the blog post here](https://configcat.com/blog/)
 
