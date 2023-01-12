@@ -7,7 +7,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<IConfigCatClient>(sp =>
 {
-    var client = ConfigCatClient.Get("YOUR-ConfigCat-SDK-KEY", 
+    var client = ConfigCatClient.Get("YOUR-CONFIGCAT-KEY", 
      options =>
      {
          options.PollingMode = PollingModes.AutoPoll(pollInterval: TimeSpan.FromSeconds(3600));
