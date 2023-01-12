@@ -4,7 +4,6 @@ A sample application showcasing how A/B testing with ConfigCat's Feature Flags a
 This app uses ConfigCat's feature flags and user segmentation system to change the color of the add-to-cart button. The feature flag toggle (ON/OFF) determines how the app behaves, and this change in color can influence the user clickthrough rate, which is measured by Amplitude.
 
 ![A/B testing cover photo](./ab-testing-cover-photo.png)
-https://configcat.com
 
 ## Build & Run
 
