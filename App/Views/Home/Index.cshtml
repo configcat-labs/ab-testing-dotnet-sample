@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>T shirt card</title>
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+</head>
+<body>
+    <h1>T-Shirt Shopping Website</h1>
+    <div class="shopping-cart">
+        <div class="tshirt-list">
+            <div class="tshirt">
+                <div>
+                    <img src="~/public/t-shirt.png" alt="white-tshirt">
+                </div>
+                <hr />
+                <div class="tshirt-info">
+                    <h3>ConfigCat T-Shirt</h3>
+                    <p>Men's Regular-Fit Short-Sleeve T-Shirt</p>
+                    @using (Html.BeginForm("AddToCartForm", "Home", FormMethod.Post))
+                    {
+                        <div class="tshirt-size">
+                            <h6> Available sizes</h6>
+                            <input type="radio" name="size" id="small" value="Small">
+                            <label for="small">Small</label>
+                            <input type="radio" name="size" id="medium" value="Medium">
+                            <label for="medium">Medium</label>
+                            <input type="radio" name="size" id="large" value="Large">
+                            <label for="large">Large</label>
+                            <input type="radio" name="size" id="x-large" value="X-Large">
+                            <label for="x-large">X-Large</label>
+                        </div>
+                        <div>
+                            <p class="price">$19.99</p>
+                            <input type="submit" value="Add to Cart" class="add-to-cart" style="@ViewBag.Style">
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
