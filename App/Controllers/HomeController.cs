@@ -15,7 +15,7 @@ namespace AB_test_app.Controllers
         }
 
         // creating a user
-        readonly User userObject = new User("UID-132dadss4-12-55");
+        readonly User userObject = new User("uid-1234-12-55");
         public IActionResult Index()
         {
             // assigning the flag value depending on the ConfigCat response
@@ -56,7 +56,7 @@ namespace AB_test_app.Controllers
             // HTTP POST request body:
             var data = new
             {
-                api_key = "YOUR-AMPLITUDE-KEY",
+                api_key = "YOUR-AMPLITUDE-API-KEY",
                 events = new[]
                 {
                     new
