@@ -1,20 +1,25 @@
-# ab-testing-dotnet-sample
-A sample application showcasing how A/B testing with ConfigCat's Feature Flags and Amplitude can be done.
+# A/B Testing in ASP.NET Sample App
 
-This app uses ConfigCat's feature flags and user segmentation system to change the color of the add-to-cart button. The feature flag toggle (ON/OFF) determines how the app behaves, and this change in color can influence the user clickthrough rate, which is measured by Amplitude.
+A sample app showcasing how to conduct an A/B test experiment in ASP.NET using a [ConfigCat Feature Flag](https://configcat.com/featureflags/) and [Amplitude's analytics platform](https://amplitude.com/).
 
-![A/B testing cover photo](./ab-testing-cover-photo.png)
+![A/B test variations](./ab-test-variations.png)
 
-## Build & Run
+## Setup and Run
 
-- clone the repository
-- open the app in Visual Studio
-- replace API key placeholders in code with actual API keys
-- Run the app using the Visual Studio IDE
+1. Clone this repository
+2. Open the project in Visual Studio Code
+3. Add your ConfigCat SDK key to `appsettings.json`
+4. Launch the app in your browser with the following command:
 
-## Useful links to technical resources:
-- Learn [C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
-- ConfigCat [Documentation](https://configcat.com/docs/)
+```bash
+dotnet run --launch-profile https
+```
+
+## Learn more:
+
+- ASP.NET [Documentation](https://learn.microsoft.com/en-us/aspnet/core/)
+- ConfigCat SDK for .NET [Reference](https://configcat.com/docs/sdk-reference/dotnet/generic-host/)
+- Learn more about ConfigCat's feature flags [here](https://configcat.com/featureflags/)
 - Amplitude [Documentation](https://www.docs.developers.amplitude.com/documentation-home/#install)
 
 
@@ -22,10 +27,13 @@ This app uses ConfigCat's feature flags and user segmentation system to change t
 
 You can also explore other code samples for various languages, frameworks, and topics here in the [ConfigCat labs](https://github.com/configcat-labs) on GitHub.
 
-Keep up with ConfigCat on [Twitter](https://twitter.com/configcat), [Facebook](https://www.facebook.com/configcat), [LinkedIn](https://www.linkedin.com/company/configcat/), and [GitHub](https://github.com/configcat).
+Keep up with ConfigCat on [X](https://x.com/configcat), [Facebook](https://www.facebook.com/configcat), [LinkedIn](https://www.linkedin.com/company/configcat/), [GitHub](https://github.com/configcat), and the [News & Product Updates](https://configcat.com/docs/news/) page.
 
-## Author
-[EMIL KOVAČEVIĆ](https://github.com/emilkovacevic)
+## Authors
+
+- [EMIL KOVAČEVIĆ](https://github.com/emilkovacevic)
+- [Chavez Harris](https://github.com/codedbychavez)
 
 ## Contributions
+
 Contributions are welcome!
