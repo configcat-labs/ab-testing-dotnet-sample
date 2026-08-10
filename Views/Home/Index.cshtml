@@ -16,7 +16,7 @@
                 <h5 class="card-title">Yarn Mouse Cat Toy</h5>
                 <p class="card-text">A cozy, handcrafted yarn mouse your cat will love to chase and pounce on.</p>
                 <p class="fw-bold">$12.99</p>
-                <a href="#" class="btn @(Model.IsMyFeatureFlagEnabled ? "btn-success" : "btn-dark")">Add to Cart</a>
+                <button type="button" class="btn @(Model.IsMyFeatureFlagEnabled ? "btn-success" : "btn-dark")" onclick="amplitude.track('Add to Cart', { buttonColor: '@(Model.IsMyFeatureFlagEnabled ? "green" : "black")' })">Add to Cart</button>
             </div>
         </div>
     </div>
