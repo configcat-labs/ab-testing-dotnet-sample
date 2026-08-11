@@ -6,7 +6,7 @@ using ab_testing_dotnet_sample.Models;
 namespace ab_testing_dotnet_sample.Controllers;
 
 // Inject the ConfigCat client via a constructor parameter
-// so we can use it within the Views/Home/index.cshtml file to control the "Add to Cart" button
+// so we can read the feature flag's value and pass it to the Views/Home/Index.cshtml file to control the "Add to Cart" button
 public class HomeController(IConfigCatClient configCatClient) : Controller
 {
     public async Task<IActionResult> IndexAsync()
@@ -21,7 +21,7 @@ public class HomeController(IConfigCatClient configCatClient) : Controller
         // Get the flag's latest value
         var isMyFeatureFlagEnabled = await configCatClient.GetValueAsync("myFeatureFlag", false, configCatUser);
 
-        // Return its value to the view via the view Model
+        // Return its value to the view
         return View(new IndexViewModel { IsMyFeatureFlagEnabled = isMyFeatureFlagEnabled });
     }
 
