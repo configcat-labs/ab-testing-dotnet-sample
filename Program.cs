@@ -1,7 +1,14 @@
+using ab_testing_dotnet_sample.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Hook ConfigCat up via the application builder
 builder.UseConfigCat();
+
+// Configure Amplitude and add a named HTTP client for accessing the Amplitude HTTP API
+builder.Services.Configure<AmplitudeOptions>(builder.Configuration.GetSection("Amplitude"));
+builder.Services.AddHttpClient("amplitude",
+    options => options.BaseAddress = new Uri("https://api2.amplitude.com"));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -27,6 +34,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();
