@@ -22,9 +22,9 @@ public class HomeController(
         var configCatUser = CreateConfigCatUser();
 
         // Get the flag's latest value
-        var value = await configCatClient.GetValueAsync("addToCartButtonAbTest", false, configCatUser);
+        var value = await configCatClient.GetValueAsync("addToCartButtonAbTest", "dark", configCatUser);
 
-        var addToCartButtonVariation = value ? "green" : "dark";
+        var addToCartButtonVariation = value;
 
         // Return its value to the view
         return View(new IndexViewModel { AddToCartButtonVariation = addToCartButtonVariation });
