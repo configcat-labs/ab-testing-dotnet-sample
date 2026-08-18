@@ -91,7 +91,7 @@ public class HomeController(
         // Send POST request to Amplitude
         try
         {
-            var response = await client.PostAsync("https://api2.amplitude.com/2/httpapi", JsonContent.Create(data));
+            var response = await client.PostAsync("/2/httpapi", JsonContent.Create(data));
             response.EnsureSuccessStatusCode();
         }
         catch (Exception ex)
