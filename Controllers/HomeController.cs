@@ -1,10 +1,10 @@
 using System.Diagnostics;
-using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Nodes;
-using Microsoft.Extensions.Options;
 using ab_testing_dotnet_sample.Configuration;
 using ab_testing_dotnet_sample.Models;
 using ConfigCat.Client; // Import types from the ConfigCat SDK's namespace
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace ab_testing_dotnet_sample.Controllers;
 
