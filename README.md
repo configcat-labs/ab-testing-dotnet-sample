@@ -6,14 +6,13 @@ A sample app showcasing how to conduct an A/B test experiment in ASP.NET using a
 
 ## Setup and Run
 
-1. Clone this repository
-2. Open the project in Visual Studio Code
-3. Add your ConfigCat SDK key to `appsettings.json`
-4. Launch the app in your browser with the following command:
-
-```bash
-dotnet run --launch-profile https
-```
+1. Clone this repository.
+2. Open the project in Visual Studio Code or any other .NET and C#-compatible IDE.
+3. In `appsettings.Development.json` and `appsettings.json`, within the `ConfigCat` block, replace the placeholder with your actual ConfigCat SDK Key. It is recommended to use separate SDK Keys for development and production.
+4. Launch the app with the following command:
+   ```bash
+   dotnet run --launch-profile https
+   ```
 
 ## Learn more:
 
